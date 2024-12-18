@@ -300,6 +300,7 @@ PRODUCT_PACKAGES += \
     SettingsOverlayCancunf \
     SettingsProviderOverlayCancunf \
     SettingsProviderOverlayCancunpXT2431-1 \
+    SettingsProviderOverlayCancunpXT2431-2 \
     SettingsProviderOverlayCancunpXT2431-3 \
     SystemUIOverlayCancunf \
     TelephonyOverlayCancunf \
