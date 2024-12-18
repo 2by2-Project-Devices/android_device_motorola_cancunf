@@ -144,6 +144,18 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
 
+# Felica (RETJP)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/felica/retjp/common.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/common.cfg \
+    $(LOCAL_PATH)/configs/felica/retjp/mfm.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/mfm.cfg \
+    $(LOCAL_PATH)/configs/felica/retjp/mfs.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/mfs.cfg
+
+# Felica (YMOBILE)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/felica/ymobile/common.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica_ymobile/common.cfg \
+    $(LOCAL_PATH)/configs/felica/ymobile/mfm.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica_ymobile/mfm.cfg \
+    $(LOCAL_PATH)/configs/felica/ymobile/mfs.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica_ymobile/mfs.cfg
+
 # FM Radio
 PRODUCT_PACKAGES += \
     FMRadio
@@ -245,7 +257,8 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc-service.nxp
+    android.hardware.nfc-service.nxp \
+    android.hardware.secure_element-service.nxp
 
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
