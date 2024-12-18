@@ -1,5 +1,5 @@
 android_app {
-    name: "MotoActions",
+    name: "MotoActions.cancunf",
     defaults: ["SettingsLibDefaults"],
 
     srcs: ["src/**/*.java"],
