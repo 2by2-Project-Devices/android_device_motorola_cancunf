@@ -257,7 +257,8 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc-service.nxp
+    android.hardware.nfc-service.nxp \
+    android.hardware.secure_element-service.nxp
 
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
