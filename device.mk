@@ -387,7 +387,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.2.vendor
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    $(DEVICE_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json \
+    $(DEVICE_PATH)/configs/powerhint-cancunp.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint-cancunp.json
 
 # Power Off Alarm
 PRODUCT_PACKAGES += \
