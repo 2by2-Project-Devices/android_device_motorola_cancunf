@@ -9,10 +9,10 @@ on property:ro.boot.hardware.sku="XT2431-2"
     setprop vendor.usb.product_string "moto g64y 5G"
     setprop persist.vendor.nfc.config_file_name "libnfc-nxp_220.conf"
 
-on property:ro.boot.carrier="ymobile" && ro.boot.hardware.sku="XT2431-2"
+on property:ro.boot.carrier="ymobile" && property:ro.boot.hardware.sku="XT2431-2"
     mount none /product/etc/felica_ymobile /product/etc/felica bind
 
-on property:ro.boot.carrier="retjp" && ro.boot.hardware.sku="XT2431-2"
+on property:ro.boot.carrier="retjp" && property:ro.boot.hardware.sku="XT2431-2"
     mount none /product/etc/felica_retjp /product/etc/felica bind
 
 on property:ro.vendor.hw.felica=""
