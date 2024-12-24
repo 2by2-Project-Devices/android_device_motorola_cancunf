@@ -10,9 +10,11 @@ on property:ro.boot.hardware.sku="XT2431-2"
     setprop persist.vendor.nfc.config_file_name "libnfc-nxp_220.conf"
 
 on property:ro.boot.carrier="ymobile" && property:ro.boot.hardware.sku="XT2431-2"
+    mkdir /product/etc/felica
     mount none /product/etc/felica_ymobile /product/etc/felica bind
 
 on property:ro.boot.carrier="retjp" && property:ro.boot.hardware.sku="XT2431-2"
+    mkdir /product/etc/felica
     mount none /product/etc/felica_retjp /product/etc/felica bind
 
 on property:ro.vendor.hw.felica=""
