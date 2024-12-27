@@ -244,7 +244,7 @@ PRODUCT_COPY_FILES += \
 
 # MotoActions
 PRODUCT_PACKAGES += \
-    MotoActions
+    MotoActions.cancunf
 
 # Neural Networks
 PRODUCT_PACKAGES += \
